@@ -1,0 +1,72 @@
+{
+    "users": {
+        "fajar": {
+            "password": "123",
+            "role": "supervisor",
+            "nama": "fajar"
+        },
+        "juju": {
+            "password": "111",
+            "role": "staff_gudang",
+            "nama": "jujur"
+        },
+        "kuku": {
+            "password": "222",
+            "role": "staff_toko",
+            "nama": "kukur"
+        }
+    },
+    "barang": {
+        "b1": {
+            "id": "b1",
+            "nama": "bolu",
+            "harga": 3000,
+            "stok": 0,
+            "created_at": "24-03-2026 23:57",
+            "updated_at": "24-03-2026 23:57"
+        }
+    },
+    "supplier": {},
+    "gudang": {
+        "g1": {
+            "nama": "gs",
+            "stok": {
+                "b1": 60
+            }
+        }
+    },
+    "toko": {
+        "t1": {
+            "nama": "toko1",
+            "stok": {
+                "b1": 10
+            }
+        },
+        "t2": {
+            "nama": "toko2",
+            "stok": {}
+        }
+    },
+    "distribusi": [
+        {
+            "barang": "b1",
+            "toko": "t1",
+            "jumlah": 10,
+            "gudang": "g1",
+            "history": [
+                {
+                    "status": "\ud83d\udce6 DIKIRIM",
+                    "waktu": "24-03-2026 23:58"
+                },
+                {
+                    "status": "\u2705 PROSES",
+                    "waktu": "24-03-2026 23:59"
+                },
+                {
+                    "status": "\u2705 SAMPAI",
+                    "waktu": "25-03-2026 00:00"
+                }
+            ]
+        }
+    ]
+}
